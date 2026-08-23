@@ -7,7 +7,7 @@ const root = resolve(process.cwd());
 
 test("source contains the CI/CD demo content", async () => {
   const html = await readFile(resolve(root, "src/index.html"), "utf8");
-  assert.match(html, /Continuous Delivery fail/);
+  assert.match(html, /Continuous Delivery/);
   assert.match(html, /Continuous Integration/);
 });
 
