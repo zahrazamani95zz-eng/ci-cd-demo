@@ -1,66 +1,92 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A presentation-ready Continuous Integration and Continuous Delivery demo." />
-  <title>CI/CD Demo</title>
-  <link rel="stylesheet" href="./styles.css" />
-</head>
-<body>
-  <main class="shell">
-    <header class="hero">
-      <div>
-        <p class="eyebrow">LIVE DEMO</p>
-        <h1>Continuous Delivery</h1>
-        <p class="subtitle">One small change → automated validation → production-ready release.</p>
-      </div>
-      <div class="badge"><span></span> Pipeline-ready</div>
-    </header>
-
-    <section class="card release-card">
-      <div class="card-head">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A presentation-ready Continuous Integration and Continuous Delivery demo."
+    />
+    <title>CI/CD Demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
         <div>
-          <p class="label">CURRENT RELEASE</p>
-          <h2>Release Board</h2>
+          <p class="eyebrow">LIVE DEMO</p>
+          <h1>Continuous Delivery 2</h1>
+          <p class="subtitle">
+            One small change → automated validation → production-ready release.
+          </p>
         </div>
-        <div class="version">v1.0.0</div>
-      </div>
+        <div class="badge"><span></span> Pipeline-ready</div>
+      </header>
 
-      <div class="pipeline" aria-label="CI/CD pipeline">
-        <div class="step done"><div class="icon">✓</div><strong>Commit</strong><small>Change pushed</small></div>
-        <div class="line done"></div>
-        <div class="step done"><div class="icon">✓</div><strong>Test</strong><small>Automated checks</small></div>
-        <div class="line done"></div>
-        <div class="step done"><div class="icon">✓</div><strong>Build</strong><small>Artifact created</small></div>
-        <div class="line done"></div>
-        <div class="step done"><div class="icon">✓</div><strong>Deploy</strong><small>Release on demand</small></div>
-      </div>
+      <section class="card release-card">
+        <div class="card-head">
+          <div>
+            <p class="label">CURRENT RELEASE</p>
+            <h2>Release Board</h2>
+          </div>
+          <div class="version">v1.0.0</div>
+        </div>
 
-      <div class="success">
-        <div class="success-dot"></div>
-        <div><strong>Production ready</strong><span>All automated checks passed.</span></div>
-      </div>
-    </section>
+        <div class="pipeline" aria-label="CI/CD pipeline">
+          <div class="step done">
+            <div class="icon">✓</div>
+            <strong>Commit</strong><small>Change pushed</small>
+          </div>
+          <div class="line done"></div>
+          <div class="step done">
+            <div class="icon">✓</div>
+            <strong>Test</strong><small>Automated checks</small>
+          </div>
+          <div class="line done"></div>
+          <div class="step done">
+            <div class="icon">✓</div>
+            <strong>Build</strong><small>Artifact created</small>
+          </div>
+          <div class="line done"></div>
+          <div class="step done">
+            <div class="icon">✓</div>
+            <strong>Deploy</strong><small>Release on demand</small>
+          </div>
+        </div>
 
-    <section class="grid">
-      <article class="card concept">
-        <p class="label">CI</p>
-        <h3>Continuous Integration</h3>
-        <p>Changes are integrated frequently and validated automatically with tests and a build.</p>
-      </article>
-      <article class="card concept">
-        <p class="label">CD</p>
-        <h3>Continuous Delivery</h3>
-        <p>Every successful change becomes production-ready and can be released through an automated pipeline.</p>
-      </article>
-    </section>
+        <div class="success">
+          <div class="success-dot"></div>
+          <div>
+            <strong>Production ready</strong
+            ><span>All automated checks passed.</span>
+          </div>
+        </div>
+      </section>
 
-    <footer>
-      <span>Built for a live presentation</span>
-      <span class="commit">Build <strong data-build>local</strong></span>
-    </footer>
-  </main>
-  <script src="./app.js"></script>
-</body>
+      <section class="grid">
+        <article class="card concept">
+          <p class="label">CI</p>
+          <h3>Continuous Integration</h3>
+          <p>
+            Changes are integrated frequently and validated automatically with
+            tests and a build.
+          </p>
+        </article>
+        <article class="card concept">
+          <p class="label">CD</p>
+          <h3>Continuous Delivery</h3>
+          <p>
+            Every successful change becomes production-ready and can be released
+            through an automated pipeline.
+          </p>
+        </article>
+      </section>
+
+      <footer>
+        <span>Built for a live presentation</span>
+        <span class="commit">Build <strong data-build>local</strong></span>
+      </footer>
+    </main>
+    <script src="./app.js"></script>
+  </body>
 </html>
